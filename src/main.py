@@ -1,3 +1,5 @@
+# This is main branch
 
-# This is major file
-# sprint0
+def add (a,b):
+    return a+b
+    
