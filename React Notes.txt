@@ -1,0 +1,107 @@
+
+
+React JS:
+React JS is declarative , effiecient and flexible Javascript Library.
+React JS is an open-source JS library used to create intefaces in a delarative and efficient way.
+it is a component - based front end library responsible for the view layer of MVC architecture.
+React JS is used to create modular interfaces and promotes development of reusable UI components that dispaly dynamic data.
+
+React JS is implemented by Meta(facebook).
+
+Features of React JS:
+1.JSX:(Javascript Syntax Extension):
+JSX is a combination of HTML and Javascript.
+We can embed Javascript objects inside HTML elements and vice- versa.
+JSX is not supported by browsers, as a result  Babel compiler converts JSX code into Javascript code and HTMl.
+
+ex: var element = <h1>Welcome Home</h1>;
+
+Normal JavaScript:
+
+<script>
+if(flag == true){
+	document.getElementById("txtName").value="Hello";
+}
+else
+{
+	document.getElementById("txtName").value="Bye";
+}
+
+</script>
+
+React JS:
+
+if(flag == true){
+	<input id="txtName" value="Hello"/>
+}
+else
+{
+	<input id="txtName" value="Bye"/>
+}
+
+2. Virtual DOM:
+
+DOM stands for Document Object Model. it is the most important part of  the WEB  as it divides code into  modules and executes the code.
+Usually JavaScript framework updates the whole DOM at once, which makes application very slow. But React JS used virtual DOM which exactly a copy of original DOM. When ever there is modification in the web application the whole virual DOM is updated first and tries to find the difference between Virtual and Original DOM. If there is a diffrence  only that difference part is update in the original DOM.
+
+3.One Way data binding:
+the name it self conveys  that is one directional flow of data . The data in react flows only in one direction. that is the data transfer from parent to child component. 
+
+4.Conditional Statement:JSX allows us to write conditional statement. The view of data in the browser will be based the conditions applied in JSX code.
+
+To work with React JS :
+1.Node JS - install
+2.Visual Studio Code
+3.open "Teminal Menu" on VS code and click on "New Terminal".
+4.Navigate the command prompt directory to  the folder inwhich we need to create react application.
+	C:\Users\E009810\> cd\
+	C:/> cd Projects
+	C:\Projects> md B97
+	C:\Projects> cd B97
+	C:\Projects\B97>
+5.run the command "npx create-react-app b97reactapp"
+6.run the project npm start
+
+
+
+Component: 
+A component is considered as the core building block of React Application.
+It makes the task of building UIs makes easier in React.
+components work independently from one another and merge all in it's parent component, which will be the final user interface UI.
+Every React component have their own structure(style,UI),methods(functionality) and API's.
+
+Components are mainly 2 types in React:
+1.Functional Component
+2.Class Component
+
+
+Functional Component:
+Function Components are a way to write components that only contains a render method and don't have their own state.
+They are simply JavaScript Functions that may or may not recieve data parameter.
+This functional component is also called as sateless component.
+ex:
+function About(){
+    return(
+        <h2>This is About Page.</h2>
+    );
+}
+
+
+Class Component:
+
+class components are more complex than functional component. it requires you to extend from React. 
+We can pass data from one class to other class component.
+We can create a class component by defining a class that extends React.component and renders or returns a function. 
+
+ex:
+
+class Contact extends React.Component{
+	render(){
+		return(
+			 <h2>This is contact Page.</h2>
+		);
+	}
+}
+	
+
+
